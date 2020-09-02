@@ -1,0 +1,310 @@
+@color-primary: #ff5f6d;
+@color-secondary: #ffc371;
+@color-gray-light: #f5f5f5;
+@color-gray: #9b9b9b;
+@color-gray-dank: #434345;
+@color-white: #fff;
+@color-black: #191919;
+@color-black-light: #212121;
+
+@color-help-dank: #02AAB0;
+@color-help-light: #00CDAC;
+
+@bg-header: #fff;
+@bg-footer: #191919;
+
+@header-height: 56px;
+
+@font-face {
+    font-family: materialdesignicons;
+    src: url(../font/materialdesignicons-webfont.woff2);
+}
+
+// *, *::before, *::after {
+//     box-sizing: border-box;
+// }
+
+:root {
+  font-size: 10px;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: inherit;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+button:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+  text-decoration: unset;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+p {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+// icon social FontAwesome
+.icon {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 56px;
+  font-style: normal;
+}
+
+.icon-xxs {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+a.icon {
+  transition: .3s all ease;
+}
+
+[class*=fa-]::before {
+  font-weight: 400;
+  font-family: fontawesome;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &-facebook::before {
+    content: "\f09a";
+  }
+  
+  &-twitter::before {
+    content: "\f099";
+  }
+  
+  &-google-plus::before {
+    content: "\f0d5";
+  }
+  
+  &-linkedin::before {
+    content: "\f0e1";
+  }
+}
+
+// icon font material
+.mdi {
+  display: inline-block;
+  font-weight: 400;
+  font-style: normal;
+  font-family: materialdesignicons;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0,0);
+}
+
+.mdi-arrow-right::before {
+  content: "\f14f";
+}
+
+// text transform
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-color-gray {
+  color: @color-gray;
+}
+
+.text-color-white {
+  color: @color-white;
+}
+
+// size text
+.small {
+  font-size: 75%;
+}
+
+.big {
+  font-size: 112.25%;
+  line-height: 1.5;
+}
+
+// section title
+.section-title {
+  line-height: 1.2;
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 23px;
+
+  &--black {
+    color: @color-black;
+  }
+
+  &--white {
+    color: @color-white;
+  }
+}
+
+// button 
+.btn {
+  position: relative;
+  padding: 9px 16px;
+  font-size: 14px;
+  line-height: 28px;
+  border-radius: 3px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  border-width: 2px;
+  transition: .3s;
+  backface-visibility: hidden;
+  font-weight: 700;
+  min-width: 180px;
+
+  // button primary
+  &-primary {
+    color: @color-white;
+    background-color: @color-primary;
+    border-color: @color-primary;
+  }
+
+  // button default
+  .btn-default {
+    color: @color-help-light;
+    background-color: @color-white;
+    border-color: @color-white;
+}
+}
+
+// effect
+.btn-anis-effect {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-color: transparent;
+  transition: .2s;
+  transition-delay: .1s;
+
+  &.btn {
+    border-radius: 25px;
+  }
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #434345;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: -1;
+  }
+
+  &:before {
+    left: -20px;
+    transform: translate(-50%,-50%);
+  }
+
+  &:after {
+    right: -20px;
+    transform: translate(50%,-50%);
+  }
+
+  // animation effect hover
+  &:hover {
+    transition-delay: .45s;
+  
+    &:before {
+      -webkit-animation: criss-cross-left .8s;
+      animation: criss-cross-left .8s;
+    }
+  
+    &:after {
+      -webkit-animation: criss-cross-right .8s;
+      animation: criss-cross-right .8s;
+    }
+  }
+
+  // effect btn primary
+  &.btn-primary {
+    color: @color-white;
+    background-color: @color-primary;
+
+    &:before, 
+    &:after {
+      background: @color-secondary;
+    }
+
+    // animation effect primary hover
+    &:hover {
+      color: @color-white;
+      border-color: @color-secondary;
+      background: @color-secondary;
+    }
+  }
+
+  // effect btn default
+  &.btn-default {
+    color: @color-help-light;
+    background-color: @color-white;
+
+    &:before, 
+    &:after {
+      background: @color-primary;
+    }
+
+    // animation effect default hover
+    &:hover {
+      color: @color-white;
+      border-color: @color-primary;
+      background: @color-primary;
+    }
+  }
+}
+
+// animation fade In Right
+.fadeInRight {
+  -webkit-animation-name:fadeInRight;
+  animation-name:fadeInRight
+}
+
+// animation fade In Left
+.fadeInLeft { 
+  -webkit-animation-name:fadeInLeft;
+  animation-name:fadeInLeft;
+}
+
+// animation fade In Up
+.fadeInUp {
+  -webkit-animation-name:fadeInUp;
+  animation-name:fadeInUp
+}
+
+// offset

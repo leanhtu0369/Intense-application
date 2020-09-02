@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet/less" type="text/css" href="css/style.less" /> -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <title>Application</title>
+</head>
+<body>
+  <!-- header -->  
+  <header class="header">
+    <!-- header panel -->  
+    <div class="header__panel">
+      <!-- header panel button toogle menu -->  
+      <button class="header__panel__btn btn-toogle-menu" onclick="tuToogleMenu(this)">
+        <span></span>    
+      </button>
+      <!-- end header panel button toogle menu --> 
+      
+      <!-- header panel logo -->  
+      <div class="header__panel__logo">
+        <a href="#"><img src="images/logo.png"> </a>
+      </div>
+      <!-- end header panel logo -->
+    </div>    
+    <!-- end header panel -->  
+
+    <!-- header menu --> 
+    <div class="header__menu">
+      <ul class="header__menu__nav">
+        <li class="header__menu__nav-item">
+          <a class="header__menu__nav-link" href="#home">Home</a>
+        </li>
+        <li class="header__menu__nav-item">
+          <a class="header__menu__nav-link" href="#features">Features</a>
+        </li>
+        <li class="header__menu__nav-item">
+          <a class="header__menu__nav-link" href="#responsive">Responsive</a>
+        </li>
+        <li class="header__menu__nav-item">
+          <a class="header__menu__nav-link" href="#help">Help</a>
+        </li>
+        <li class="header__menu__nav-item">
+          <a class="header__menu__nav-link" href="#services">Services</a>
+        </li>
+        <li class="header__menu__nav-item">
+          <a class="header__menu__nav-link" href="#testimonials">Testimonials</a>
+        </li>
+      </ul>
+    </div> 
+    <!-- end header menu -->  
+
+    <!-- header social -->
+    <div class="header__social">
+      <ul class="nav header__social__nav">
+        <li class="header__social__nav-item">
+          <a class="header__social__nav-link icon icon-xxs fa-facebook" href="#"></a>
+        </li>
+        <li class="header__social__nav-item">
+          <a class="header__social__nav-link icon icon-xxs fa-twitter" href="#"></a>
+        </li>
+        <li class="header__social__nav-item">
+          <a class="header__social__nav-link icon icon-xxs fa-google-plus" href="#"></a>
+        </li>
+        <li class="header__social__nav-item">
+          <a class="header__social__nav-link icon icon-xxs fa-linkedin" href="#"></a>
+        </li>
+      </ul>
+    </div>  
+    <!-- end header social -->
+  </header>
+  <!-- end header -->  
+
+  <!-- block home -->
+  <section id="home" class="section-home">
+    <div class="container">
+      <div class="row section-home__wrap">
+        <div class="col-xl-5 section-home__left">
+          <h1 class="section-home__left--title">Get <span class="text-uppercase">INTENSE</span> <span class="small">App Now!</span></h1>
+          <div class="section-home__left--intro">
+            <p class="big">INTENSE is the most unique mobile app, designed for managing startups, small business projects, and supporting modern companies.</p>
+          </div>
+          <div class="section-home__left--download">
+            <a href="#">
+              <img src="images/icon-appstore.png" alt="">
+            </a>  
+            <a href="#">
+              <img src="images/icon-google-play.png" alt="">
+            </a>  
+          </div>
+        </div>
+
+        <div class="offset-xl-1 col-xl-6 section-home__right">
+          <img src="images/home.jpg">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end block home -->
+
+  <!-- block features -->
+  <section id="features" class="section-features">
+    <div class="container">
+      <h2 class="section-title section-title--black">Our Key Features</h2>
+      <div class="row section-features__wrap">
+        <div class="col-md-4 section-features__item">
+          <img src="images/icon-01.png" alt="">
+          <h6 class="section-features__item__title">SECURE DATA</h6>
+          <p class="section-features__item__content text-color-gray">Transfer all information with the help of SSL - a solution allowing you to save any data from the public eye.</p>
+        </div>
+        <div class="col-md-4 section-features__item">
+          <img src="images/icon-02.png" alt="">
+          <h6 class="section-features__item__title">NETWORK WORKFLOW</h6>
+          <p class="section-features__item__content text-color-gray">Network Workflow feature will let you build, organize, and develop a sustainable network in seconds.</p>
+        </div>
+        <div class="col-md-4 section-features__item">
+          <img src="images/icon-03.png" alt="">
+          <h6 class="section-features__item__title">TOP RATING PRODUCT</h6>
+          <p class="section-features__item__content text-color-gray">Our app has won numerous awards from leading high-tech mass media and received worldwide recognition.</p>
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- end block features -->
+
+  <!-- block responsive -->
+  <section id="responsive" class="section-responsive">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 section-responsive--left">
+          <h2 class="section-title section-title--black">Extremely Responsive and Retina Ready</h2>
+          <p class="text-color-gray">Due to the responsive design and Retina technology built in our app, you can launch it on any devices or <br> modern gadgets.</p>
+          <div class="section-responsive--left__btn">
+            <a class="btn btn-primary btn-ellipse btn-anis-effect" href="#">DOWNLOAD FOR FREE</a>
+          </div>
+        </div>
+        <div class="col-lg-6 section-responsive--right">
+          <img src="images/responsive.png" alt="">
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- end block responsive -->
+
+  <!-- block help -->
+  <section id="help" class="section-help">
+    <div class="container">
+      <div class="row section-help__wrap">
+        <div class="offset-lg-7 col-lg-5 section-help--right fadeInRight">
+          <h2 class="section-title section-title--white">We Help You Grow</h2>
+          <p class="text-color-white">Intense Mobile App enables all its users with constant support and wide set of tools to develop and grow their businesses and projects.</p>
+          <div class="section-help--right__btn">
+            <a class="btn btn-default btn-ellipse btn-anis-effect" href="#">Try now</a>
+          </div>
+        </div>
+      </div>  
+    </div>  
+  </section>
+  <!-- end block help -->
+
+  <!-- block services -->
+  <section id="services" class="section-services">
+    <div class="container">
+      <div class="row section-services__wrap">
+        <div class="col-lg-5 section-services--left">
+          <h2 class="section-title section-title--black">Our Services</h2>
+          <p class="text-color-gray">While other developers and software providers offer just a basic range of supplementary services, we give our users access to an extensive amount of services, available for free when they download and install our app on their devices.</p>
+          <div class="section-services--left__btn">
+            <a class="btn btn-primary btn-ellipse btn-anis-effect" href="#">DOWNLOAD FOR FREE</a>
+          </div>
+        </div>
+        <div class="offset-lg-1 col-lg-6 section-services--right">
+          <img src="images/services.png" alt="">
+        </div>
+      </div>
+    </div>  
+  </section>
+  <!-- end block services -->
+
+  <!-- block testimonials -->
+  <section id="testimonials" class="section-testimonials">
+    <div class="container">
+      <h2 class="section-title section-title--black">What People Say</h2>
+      
+    </div>  
+  </section>
+  <!-- end block testimonials -->
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <!-- footer top -->
+    <div class="footer--top container">
+      <div class="row">
+        <!-- footer top left -->
+        <div class="col-lg-4 footer--top--left">
+          <div class="footer--top__logo">
+            <a href="#"><img src="images/logo.png"> </a>
+          </div>
+          <div class="footer--top__social">
+            <ul class="nav footer--top__social__nav">
+              <li class="footer--top__social__nav-item">
+                <a class="footer--top__social__nav-link icon icon-xxs fa-facebook" href="#"></a>
+              </li>
+              <li class="footer--top__social__nav-item">
+                <a class="footer--top__social__nav-link icon icon-xxs fa-twitter" href="#"></a>
+              </li>
+              <li class="footer--top__social__nav-item">
+                <a class="footer--top__social__nav-link icon icon-xxs fa-google-plus" href="#"></a>
+              </li>
+              <li class="footer--top__social__nav-item">
+                <a class="footer--top__social__nav-link icon icon-xxs fa-linkedin" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end footer top left -->
+
+        <!-- footer top mid -->
+        <div class="col-sm-5 col-lg-3 footer--top--mid">
+            <h4 class="footer--title">Latest news</h4>
+            <article class="footer--top__widget-post">
+              <a href="#">
+                <div class="footer--top__widget-post-meta">
+                  <span class="icon-xxs mdi mdi-arrow-right"></span>
+                  <time>05/14/2018</time>
+                </div>
+                <div class="footer--top__widget-post-title">
+                  <h6>Let’s Change the World</h6>
+                </div>
+              </a>
+            </article>
+            <article class="footer--top__widget-post">
+              <a href="#">
+                <div class="footer--top__widget-post-meta">
+                  <span class="icon-xxs mdi mdi-arrow-right"></span>
+                  <time>05/14/2018</time>
+                </div>
+                <div class="footer--top__widget-post-title">
+                  <h6>Let’s Change the World</h6>
+                </div>
+              </a>
+            </article>
+        </div>
+        <!-- end footer top mid -->
+
+        <!-- footer top right -->
+        <div class="col-sm-7 col-lg-5 footer--top--right">
+          <h4 class="footer--title">Newsletter</h4>
+          <p>Keep up with our always upcoming product features and technologies. Enter your e-mail and subscribe to our newsletter.</p>
+        </div>
+        <!-- end footer top right -->
+      </div>
+    </div>
+    <!-- end footer top -->
+
+    <!-- footer bottom -->
+    <div class="footer--bottom container">
+      <p class="footer--bottom-text">Intense © <span id="copyright-year">2020</span> . <a href="#">Privacy Policy</a></p>
+    </div>
+    <!-- end footer bottom -->
+  </footer>
+<!-- end footer -->
+</body>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<!-- <script src="//cdn.jsdelivr.net/npm/less"></script> -->
+<script src="js/script.js" ></script>
+</html>
