@@ -58,6 +58,8 @@ a:hover {
 img {
   max-width: 100%;
   max-height: 100%;
+  vertical-align: middle;
+  border-style: none;
 }
 
 p {
@@ -125,10 +127,14 @@ a.icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transform: translate(0,0);
-}
 
-.mdi-arrow-right::before {
-  content: "\f14f";
+  &-arrow-right::before {
+    content: "\f14f";
+  }
+
+  &-chevron-up:before {
+    content: "\f239";
+  }
 }
 
 // text transform
@@ -140,8 +146,16 @@ a.icon {
   color: @color-gray;
 }
 
+.text-color-gray-dank {
+  color: @color-gray-dank;
+}
+
 .text-color-white {
   color: @color-white;
+}
+
+.text-color-primary {
+  color: @color-primary;
 }
 
 // size text
