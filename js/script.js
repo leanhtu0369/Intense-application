@@ -13,18 +13,19 @@ $(document).ready(function(){
   nthChildMenu = [];
   for (let index = 0; index < arrMenu.length; index++) {
     const menuItem = arrMenu[index];
-    var menuItemTop = $("#" + menuItem).offset().top - 56;
+    var menuItemTop = $("#" + menuItem).offset().top - 80;
     arrMenuTop.push(menuItemTop);
     var nthChildMenuItem = index + 1;
     nthChildMenu.push(nthChildMenuItem);
   }
   arrMenuTop.push(Infinity);
+console.log(arrMenuTop);
 
   // scroll top
   window.onscroll = function() {scrollFunction()};
 
   function activeMenu(a,b) {
-    if(($(this).scrollTop() > arrMenuTop[a]) && ($(this).scrollTop() < arrMenuTop[b])) {
+    if(($(this).scrollTop() >= arrMenuTop[a]) && ($(this).scrollTop() < arrMenuTop[b])) {
       $('.header__menu__nav-item').removeClass('active');
       $(".header__menu__nav-item:nth-child(" + nthChildMenu[a] + ")").addClass('active');
 
@@ -74,15 +75,10 @@ $(document).ready(function(){
     $(".header__menu__nav-item:nth-child("+ element +") a").on("click", function (e) {
       e.preventDefault();
       $('html, body').animate({
-        scrollTop: arrMenuTop[index] + 1
+        scrollTop: arrMenuTop[index] + 1 
       }, 500);
     });
   });
-
-  // animate load offset top block
-  // animate load offset top block section help right
-  console.log(arrMenuTop);
-
 
 });
 
