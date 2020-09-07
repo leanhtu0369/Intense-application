@@ -927,8 +927,9 @@ a.icon {
   font-size: 1.4rem;
   color: #ffc371;
 }
-.footer--top__widget-post-meta time {
-  font-size: 12px;
+.footer--top__widget-post-meta .time {
+  font-size: 1.2rem;
+  color: #fff;
   display: inline-block;
   transform: translate(0, -1px);
   transition: 0.3s;
@@ -936,7 +937,7 @@ a.icon {
 .footer--top__widget-post-title h6 {
   transition: 0.3s;
 }
-.footer--top__widget-post a:hover .footer--top__widget-post-meta time {
+.footer--top__widget-post a:hover .footer--top__widget-post-meta .time {
   transform: translate(10px, -1px);
 }
 .footer--top__widget-post a:hover .footer--top__widget-post-title h6 {
