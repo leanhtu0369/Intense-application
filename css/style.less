@@ -91,6 +91,7 @@ body {
     box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
     background: @bg-header;
     color: @color-black;
+
     &__nav {
       &-item:not(:first-child) {
         margin-top: 5px;
@@ -156,6 +157,15 @@ body {
   // header__panel
   .header__panel {
     &__btn {
+      &::after {
+        content: "";
+        position: absolute;
+        top: 56px;
+        left: 280px;
+        width: calc(100vw - 280px);
+        height: calc(100vh - 56px);
+      }
+
       span { 
         transform: rotate(360deg);
       }
