@@ -403,7 +403,7 @@ a.icon {
   background-color: #ff5f6d;
   border-color: #ff5f6d;
 }
-.btn .btn-default {
+.btn-default {
   color: #00CDAC;
   background-color: #fff;
   border-color: #fff;
@@ -1042,17 +1042,11 @@ a.icon {
     padding-top: 80px;
     padding-bottom: 80px;
   }
-  .footer--top--left {
+  .footer--top__wrap {
     text-align: center;
   }
   .footer--top__social__nav {
     justify-content: center;
-  }
-  .footer--top--right {
-    text-align: center;
-  }
-  .footer--title {
-    text-align: center;
   }
 }
 @media (max-width: 767px) {
