@@ -1,19 +1,19 @@
-@color-primary: #ff5f6d;
-@color-secondary: #ffc371;
-@color-gray-light: #f5f5f5;
-@color-gray: #9b9b9b;
-@color-gray-dark: #434345;
-@color-white: #fff;
-@color-black: #191919;
-@color-black-light: #212121;
+$color-primary: #ff5f6d;
+$color-secondary: #ffc371;
+$color-gray-light: #f5f5f5;
+$color-gray: #9b9b9b;
+$color-gray-dark: #434345;
+$color-white: #fff;
+$color-black: #191919;
+$color-black-light: #212121;
 
-@color-help-dark: #02AAB0;
-@color-help-light: #00CDAC;
+$color-help-dark: #02AAB0;
+$color-help-light: #00CDAC;
 
-@bg-header: #fff;
-@bg-footer: #191919;
+$bg-header: #fff;
+$bg-footer: #191919;
 
-@header-height: 56px;
+$header-height: 56px;
 
 @font-face {
   font-family: materialdesignicons;
@@ -67,25 +67,6 @@ p {
   margin-bottom: 18px;
 }
 
-// icon social FontAwesome
-.icon {
-  position: relative;
-  display: inline-block;
-  font-weight: 400;
-  font-size: 54px;
-  line-height: 56px;
-  font-style: normal;
-}
-
-.icon-xxs {
-  font-size: 18px;
-  line-height: 18px;
-}
-
-a.icon {
-  transition: .3s all ease;
-}
-
 [class*=fa-]::before {
   font-weight: 400;
   font-family: fontawesome;
@@ -137,25 +118,44 @@ a.icon {
   }
 }
 
+// icon social FontAwesome
+.icon {
+  position: relative;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 56px;
+  font-style: normal;
+}
+
+.icon-xxs {
+  font-size: 18px;
+  line-height: 18px;
+}
+
+a.icon {
+  transition: .3s all ease;
+}
+
 // text transform
 .text-uppercase {
   text-transform: uppercase;
 }
 
 .text-color-gray {
-  color: @color-gray;
+  color: $color-gray;
 }
 
 .text-color-gray-dark {
-  color: @color-gray-dark;
+  color: $color-gray-dark;
 }
 
 .text-color-white {
-  color: @color-white;
+  color: $color-white;
 }
 
 .text-color-primary {
-  color: @color-primary;
+  color: $color-primary;
 }
 
 // size text
@@ -176,11 +176,11 @@ a.icon {
   margin-bottom: 23px;
 
   &--black {
-    color: @color-black;
+    color: $color-black;
   }
 
   &--white {
-    color: @color-white;
+    color: $color-white;
   }
 }
 
@@ -202,16 +202,16 @@ a.icon {
 
   // button primary
   &-primary {
-    color: @color-white;
-    background-color: @color-primary;
-    border-color: @color-primary;
+    color: $color-white;
+    background-color: $color-primary;
+    border-color: $color-primary;
   }
 
   // button default
   &-default {
-    color: @color-help-light;
-    background-color: @color-white;
-    border-color: @color-white;
+    color: $color-help-light;
+    background-color: $color-white;
+    border-color: $color-white;
   }
 }
 
@@ -268,37 +268,37 @@ a.icon {
 
   // effect btn primary
   &.btn-primary {
-    color: @color-white;
-    background-color: @color-primary;
+    color: $color-white;
+    background-color: $color-primary;
 
     &:before, 
     &:after {
-      background: @color-secondary;
+      background: $color-secondary;
     }
 
     // animation effect primary hover
     &:hover {
-      color: @color-white;
-      border-color: @color-secondary;
-      background: @color-secondary;
+      color: $color-white;
+      border-color: $color-secondary;
+      background: $color-secondary;
     }
   }
 
   // effect btn default
   &.btn-default {
-    color: @color-help-light;
-    background-color: @color-white;
+    color: $color-help-light;
+    background-color: $color-white;
 
     &:before, 
     &:after {
-      background: @color-primary;
+      background: $color-primary;
     }
 
     // animation effect default hover
     &:hover {
-      color: @color-white;
-      border-color: @color-primary;
-      background: @color-primary;
+      color: $color-white;
+      border-color: $color-primary;
+      background: $color-primary;
     }
   }
 }

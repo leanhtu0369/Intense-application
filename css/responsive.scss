@@ -21,7 +21,7 @@
 
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   .br-lg {
     display: none;
   }
@@ -124,7 +124,7 @@
   .section-features {
     &__item {
       &__title {
-        font-size: 17px;
+        font-size: 1.7rem;
         line-height: 1.5;
       }
     }
